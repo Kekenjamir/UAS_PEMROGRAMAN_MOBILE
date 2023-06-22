@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>UAS PEMROGRAMAN MOBILE</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div class="container-fluid py-3" style="background-color: #3eb489">
+      <div class="container">
+        <h3 class="text-center">SISTEM INFORMASI DAFTAR UKURAN BUSANA KONVEKSI "X"</h3>
+      </div>
+    </div>
+
+    <!-- Konten -->
+    <div class="container-fluid py-5" style="background-color: aliceblue">
+      <!-- tombol aksi -->
+      <div class="container py-2">
+        <a href="/tambah"><button type="button" class="btn btn-outline-primary">Tambah Ukuran</button></a>
+        <a href="/ubah"><button type="button" class="btn btn-outline-success">Edit</button></a>
+        <a href="/hapus"><button type="button" class="btn btn-outline-danger">Hapus</button></a>
+      </div>
+
+      <!-- tabel -->
+      <div class="table-responsive">
+        <table class="table table-hover">
+          <thead class="table-dark">
+            <tr class="text-center">
+              <th>ID PELANGGAN</th>
+              <th>NAMA PELANGGAN</th>
+              <th>JENIS PESANAN</th>
+              <th>LINGKAR BADAN</th>
+              <th>PANJANG ATASAN</th>
+              <th>LINGKAR PINGGANG</th>
+              <th>PANJANG BAWAHAN</th>
+            </tr>
+          </thead>
+          <tbody class="text-center">
+            <% for (let tabel_ukuran of ukuran) { %>
+            <tr>
+              <td><%= tabel_ukuran.id_pelanggan %></td>
+              <td><%= tabel_ukuran.nama_pelanggan %></td>
+              <td><%= tabel_ukuran.jenis_pesanan %></td>
+              <td><%= tabel_ukuran.lingkar_badan %></td>
+              <td><%= tabel_ukuran.panjang_atasan %></td>
+              <td><%= tabel_ukuran.lingkar_pinggang %></td>
+              <td><%= tabel_ukuran.panjang_bawahan %></td>
+            </tr>
+            <% } %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid py-3" style="background-color: #3eb489">
+      <div class="container">
+        <h4 class="text-center">KENY MIHEWU (C2057201030)</h4>
+        <p class="text-center">Ujian Akhir Semester Mata Kuliah Pemrograman Mobile</p>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>

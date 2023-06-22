@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UAS PEMROGRAMAN MOBILE</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div class="container-fluid py-3" style="background-color: #3eb489">
+      <div class="container">
+        <h3 class="text-center">SISTEM INFORMASI DAFTAR UKURAN BUSANA KONVEKSI "X"</h3>
+      </div>
+    </div>
+
+    <!-- Tambah Data -->
+    <div class="container-fluid py-5" style="background-color: aliceblue">
+      <h4 class="text-center">TAMBAH DATA</h4>
+
+      <!-- Form Input Data -->
+      <div class="form-group">
+        <form action="/tambah" method="post">
+          <div class="row mb-3">
+            <label for="inputnama" class="col-sm-2 col-form-label">NAMA PELANGGAN</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="namapelanggan" />
+            </div>
+          </div>
+
+          <fieldset class="row mb-3">
+            <legend class="col-form-label col-sm-2 pt-0">Jenis Pakaian</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Kemeja" />
+                <label class="form-check-label" for="gridRadios1"> Kemeja </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="Blouse" />
+                <label class="form-check-label" for="gridRadios2"> Blouse </label>
+              </div>
+              <div class="form-check disabled">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="Rok" />
+                <label class="form-check-label" for="gridRadios3"> Rok </label>
+              </div>
+              <div class="form-check disabled">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="Celana" />
+                <label class="form-check-label" for="gridRadios3"> Celana </label>
+              </div>
+              <div class="form-check disabled">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios5" value="Setelan" />
+                <label class="form-check-label" for="gridRadios3"> Setelan </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="row mb-3">
+            <label for="inputping" class="col-sm-2 col-form-label">LINGKAR BADAN</label>
+            <div class="col-sm-10">
+              <input type="number" class="form-control" name="badan" />
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <label for="inputatasan" class="col-sm-2 col-form-label">PANJANG ATASAN</label>
+            <div class="col-sm-10">
+              <input type="number" class="form-control" name="atasan" />
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <label for="inputpang" class="col-sm-2 col-form-label">LINGKAR PINGGANG</label>
+            <div class="col-sm-10">
+              <input type="number" class="form-control" name="pinggang" />
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <label for="inputbawahan" class="col-sm-2 col-form-label">PANJANG BAWAHAN</label>
+            <div class="col-sm-10">
+              <input type="number" class="form-control" name="bawahan" />
+            </div>
+          </div>
+
+          <input type="submit" class="btn btn-outline-primary" value="Tambahkan Data" />
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid py-3" style="background-color: #3eb489">
+      <div class="container">
+        <h4 class="text-center">KENY MIHEWU (C2057201030)</h4>
+        <p class="text-center">Ujian Akhir Semester Mata Kuliah Pemrograman Mobile</p>
+      </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
